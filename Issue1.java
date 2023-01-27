@@ -11,8 +11,7 @@ class Issue1 {
 
     // pathの指定を気を付ける
     // Path.getの中身には開いている階層の下を記載する。
-    try (BufferedReader reader = Files.newBufferedReader(
-        Paths.get("ip001", "scores.csv"))) {
+    try (BufferedReader reader = Files.newBufferedReader(Paths.get("ip001", "scores.csv"))) {
       String line;
       while ((line = reader.readLine()) != null) {
         System.out.println(line);
